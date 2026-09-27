@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>✈️ AI Travel Agent</h1>
+            <p>Plan your perfect trip with AI</p>
+        </header>
+
+        <main>
+            <div class="card">
+
+                <label>Where do you want to go?</label>
+                <input id="destination" type="text"
+                       placeholder="e.g. Goa, Paris, Bali">
+
+                <label>Number of days</label>
+                <input id="days" type="number"
+                       min="1" placeholder="e.g. 5">
+
+                <label>Budget</label>
+                <select id="budget">
+                    <option value="budget">Budget</option>
+                    <option value="mid-range">Mid-range</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+
+                <label>Interests</label>
+                <input id="interests" type="text"
+                       placeholder="food, beaches, history">
+
+                <button onclick="planTrip()">
+                    ✨ Plan My Trip
+                </button>
+
+            </div>
+
+            <div id="result" class="result">
+                <p>Your AI-generated itinerary will appear here.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
