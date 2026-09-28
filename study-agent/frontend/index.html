@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Assistant Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Study Assistant</h1>
+        <p>Ask questions, get study tips, or create a study timetable.</p>
+    </header>
+
+    <main id="chat"></main>
+
+    <div class="examples">
+        <button onclick="useExample('plan a 2 day timetable for physics, chemistry and maths')">
+            2 Day Plan
+        </button>
+
+        <button onclick="useExample('how to avoid procrastination')">
+            Focus Tips
+        </button>
+
+        <button onclick="useExample('what is the pomodoro technique')">
+            Pomodoro
+        </button>
+
+        <button onclick="useExample('formula for quadratic equation')">
+            Formula
+        </button>
+    </div>
+
+    <form id="chat-form">
+        <input
+            id="question"
+            type="text"
+            placeholder="Ask your study question..."
+            autocomplete="off"
+        >
+
+        <button type="submit">Send</button>
+    </form>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
